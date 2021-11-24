@@ -1,7 +1,7 @@
 version: "3.8"
 services:
   app:
-    build: ./src/main/docker/dockerfile.native
+    build: ./src/main/docker
   db:
     image: mysql
     ports:
