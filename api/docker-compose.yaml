@@ -1,7 +1,9 @@
 version: "3.8"
 services:
   app:
-    build: ./src/main/docker/Dockerfile.jvm
+    build:
+      dockerfile: ./src/main/docker/Dockerfile.jvm
+      context: .
   db:
     image: mysql
     ports:
