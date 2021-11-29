@@ -1,5 +1,7 @@
 version: "3.8"
 services:
+  nginxbunkerized:
+    image: docker.io/bunkerity/bunkerized-nginx:latest
   db:
     image: mysql
     ports:
