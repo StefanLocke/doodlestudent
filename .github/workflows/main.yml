@@ -39,3 +39,6 @@ jobs:
           cd .. 
           cd back 
           docker build . -t myback 
+          cd ..
+          cd compose
+          docker-compose up
