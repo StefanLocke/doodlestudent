@@ -11,7 +11,7 @@ export class PollService {
   constructor(private http: HttpClient) { }
 
   public createPoll(p: Poll): Observable<Poll> {
-    console.log('create poll test change');
+    console.log('create poll testing');
     return this.http.post<Poll>('/api/polls', p);
   }
 
