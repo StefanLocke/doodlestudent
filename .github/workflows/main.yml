@@ -34,12 +34,7 @@ jobs:
         run: |
           git clone https://github.com/StefanLocke/doodlestudentdocker.git 
           ls 
-          cd doodlestudentdocker/TLC-TP/front 
-          docker build . -t myfont 
-          cd .. 
-          cd back 
-          docker build . -t myback 
-          cd ..
-          cd compose
+          cd doodlestudentdocker/TLC-TP/compose
           docker-compose down
+          docker-compose build
           docker-compose up -d
