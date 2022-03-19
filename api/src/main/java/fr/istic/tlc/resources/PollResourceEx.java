@@ -110,6 +110,7 @@ public class PollResourceEx {
 	@Transactional
 	public ResponseEntity<Poll> createPoll(@Valid @RequestBody Poll poll) {
 		// On enregistre le poll dans la bdd
+		System.out.println("CHANGE TEST CHANGE TEST CHANGE TEST");
 		String padId = Utils.getInstance().generateSlug(15);
 		if (this.usePad) {
 			if (client == null) {
