@@ -38,3 +38,4 @@ jobs:
           docker-compose down
           docker-compose build
           docker-compose up -d
+          # This is probably overkill, docker-compose up might be able to just update the images that have changed insteadof rebuilding all the images
